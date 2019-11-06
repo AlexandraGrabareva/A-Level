@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="http://www.iconarchive.com/download/i82801/succodesign/love-is-in-the-web/heart.ico" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>
+    Questionnaire
+  </title>
+</head>
+<body style="background-color:#DCDCDC">
+
+<p><h2><strong><p align="center">Questionnaire</p></strong></h2></p>
+
+<form class="was-validated" action="action.php" method="post">
+  <div class="form-group" align="center">
+    <div class="col-md-4 mb-3">
+      <label for="firstName">Enter your first name</label>
+      <input type="text" name="firstName" class="form-control is-valid" placeholder="First name" required pattern="[A-Z][A-Za-z' -]+">
+      <div class="invalid-feedback">Enter the valid first name</div>
+    </div>
+  </div>
+  
+  <div class="form-group" align="center">
+    <div class="col-md-4 mb-3">
+      <label for="secondName">Enter your second name</label>
+      <input type="text" name="secondName" class="form-control is-valid" placeholder="Second name" required pattern="[A-Z][A-Za-z' -]+">
+      <div class="invalid-feedback">Enter the valid second name</div>
+    </div>
+  </div>
+
+  <div class="form-group" align="center">
+    <div class="col-md-4 mb-3">
+      <label for="birthDate">Enter your date of birth</label>
+      <input type="text" name="birthDate" class="form-control is-valid" placeholder="yyyy-mm-dd" required pattern="[0-9]{4}[-][0-9]{2}[-][0-9]{2}">
+      <div class="invalid-feedback">Enter date in format: yyyy-mm-dd<br /> (for example: 1999-01-24) </div>
+    </div>
+  </div>
+  
+  <div class="form-group" align="center">
+    <div class="col-md-4 mb-3">
+      <label>Choose your region</label>
+      <select class="custom-select" name="region" required>
+        <option value="">Open the list of regions</option>
+        <option value="Cherkasy Oblast">Cherkasy Oblast</option>
+        <option value="Chernihiv Oblast">Chernihiv Oblast</option>
+        <option value="Chernivtsi Oblast">Chernivtsi Oblast</option>
+        <option value="Dnipropetrovsk Oblast">Dnipropetrovsk Oblast</option>
+        <option value="Donetsk Oblast">Donetsk Oblast</option> 
+        <option value="Ivano-Frankivsk Oblast">Ivano-Frankivsk Oblast</option> 
+        <option value="Kharkiv Oblast">Kharkiv Oblast</option> 
+        <option value="Kherson Oblast">Kherson Oblast</option> 
+        <option value="Khmelnytskyi Oblast">Khmelnytskyi Oblast</option>
+        <option value="Kiev Oblast">Kiev Oblast</option> 
+        <option value="Kirovohrad Oblast">Kirovohrad Oblast</option> 
+        <option value="Luhansk Oblast">Luhansk Oblast</option> 
+        <option value="Lviv Oblast">Lviv Oblast</option> 
+        <option value="Mykolaiv Oblast">Mykolaiv Oblast</option> 
+        <option value="Odessa Oblast">Odessa Oblast</option> 
+        <option value="Poltava Oblast">Poltava Oblast</option> 
+        <option value="Rivne Oblast">Rivne Oblast</option> 
+        <option value="Sumy Oblast">Sumy Oblast</option> 
+        <option value="Ternopil Oblast">Ternopil Oblast</option>
+        <option value="Vinnytsia Oblast">Vinnytsia Oblast</option> 
+        <option value="Volyn Oblast">Volyn Oblast</option> 
+        <option value="Zakarpattia Oblast">Zakarpattia Oblast</option> 
+        <option value="Zaporizhia Oblast">Zaporizhia Oblast</option> 
+        <option value="Zhytomyr Oblast">Zhytomyr Oblast</option>  
+      </select>
+      <div class="invalid-feedback">Choose your region</div>
+    </div>
+  </div>
+  
+  <div class="form-group" align="center">
+    <div class="col-md-4 mb-3">
+      <label>Choose your English level</label>
+      <select class="custom-select" name="level" required>
+        <option value="">Open the list of English levels</option>
+        <option value="Beginner">Beginner (A1)</option>
+        <option value="Elementary">Elementary (A2)</option>
+        <option value="Intermediate">Intermediate (B1)</option>
+        <option value="Upper-Intermediate">Upper-Intermediate (B2)</option>
+        <option value="Advanced">Advanced (C1)</option> 
+        <option value="Proficiency">Proficiency (C2)</option>   
+      </select>
+      <div class="invalid-feedback">Choose the English level</div>
+    </div>
+  </div>  
+
+  <div class="form-group" align="center">
+  	<div class="col-md-4 mb-3">
+      <label for="it[]">Select programming languages that you know</label>
+       <select multiple class="form-control" name="it[]" required>
+        <option value="PHP">PHP</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="C#">C#</option>
+        <option value="Ruby">Ruby</option>
+        <option value="SQL">SQL</option>
+        <option value="Pascal">Pascal</option>
+        <option value="Swift">Swift</option>
+      </select>
+  	<div class="invalid-feedback">You must select at least one programming language</div>
+    </div>
+  </div>
+
+  <div align="center">
+    <p><button type="submit" class="btn btn-primary">Submit</button></p>
+  </div>
+
+</form>
+
+</body>
+</html>
